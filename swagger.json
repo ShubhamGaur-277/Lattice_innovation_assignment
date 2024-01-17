@@ -1,0 +1,88 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Hospital portal",
+    "version": "1.0.0",
+    "description": "API documentation for Lattice innovation Assignment"
+  },
+  "paths": {
+    "/patients/hospitals": {
+      "get": {
+        "tags": ["patient"],
+        "summary": "get hospital deatils by their id",
+        "parameters": [{
+          "name": "id",
+          "in": "query",
+          "description": "ID of the hospital",
+          "required": true,
+          "type": "integer",
+          "default": 1
+        }],
+        "produces": ["application/json"],
+        "responses":{
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    },
+      "/patients/create": {
+        "post": {
+          "tags": ["patient"],
+          "summary": "Create a new patient",
+          "parameters": [
+            {
+              "name": "patient deatails",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Name of the patient",
+                    "example": "shubham"
+                  },
+                  "address": {
+                    "type": "string",
+                    "description": "Address of the patient",
+                    "example": "123 ss"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "Email of the patient",
+                    "example": "shubham@example.com"
+                  },
+                  "phoneNumber": {
+                    "type": "string",
+                    "description": "Phone number of the patient",
+                    "example": "1234567890"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Password for the patient",
+                    "example": "123password"
+                  },
+                  "patientPhoto": {
+                    "type": "string",
+                    "description": "URL or path to patient's photo"
+                  },
+                  "psychiatristId": {
+                    "type": "integer",
+                    "description": "ID of the associated psychiatrist",
+                    "example": 1
+                  }
+              } 
+            }
+          }
+        ],
+        "produces":["application/json"],
+        "responses": {
+          "201": {
+            "message": "created patients"
+          }
+        }
+      }
+    }
+  }
+}

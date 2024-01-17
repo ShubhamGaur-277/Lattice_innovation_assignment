@@ -1,0 +1,26 @@
+{
+  "name": "lattice_innovation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "populate-hospital": "node scripts/populateHospital.js",
+    "populate-psychiatrist": "node scripts/populatePsychiatrist.js",
+    "populate-patient": "node scripts/populatePatient.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.1",
+    "mysql2": "^3.7.0",
+    "nodemon": "^3.0.2",
+    "sequelize": "^6.35.2",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
