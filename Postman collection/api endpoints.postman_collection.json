@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "2f576ed2-9cd9-4e42-90e2-9433ce1f1cc2",
+		"name": "api endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21262805",
+		"_collection_link": "https://www.postman.com/galactic-firefly-394038/workspace/lattice-innovation/collection/21262805-2f576ed2-9cd9-4e42-90e2-9433ce1f1cc2?action=share&source=collection_link&creator=21262805"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/patients/hospitals?id=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/patients/hospitals?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"hospitals"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/patients/hospitals?id=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/patients/hospitals?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients",
+								"hospitals"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "414"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19e-UhcqR3jP9pKRl1H87WgMV/qz+fE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 17 Jan 2024 08:37:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"hospitalName\": \"Jawaharlal Nehru Medical College and Hospital\",\n    \"totalPsychiatristsCount\": 5,\n    \"totalPatientCount\": 25,\n    \"psychiatristDetails\": [\n        {\n            \"id\": 16,\n            \"name\": \"Psychiatrist 1\",\n            \"patientsCount\": 5\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Psychiatrist 2\",\n            \"patientsCount\": 5\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Psychiatrist 3\",\n            \"patientsCount\": 5\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Psychiatrist 4\",\n            \"patientsCount\": 5\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Psychiatrist 5\",\n            \"patientsCount\": 5\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/patients/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"shubham\",\r\n  \"address\": \"123 ss\",\r\n  \"email\": \"shubham@example.com\",\r\n  \"phoneNumber\": \"1234567890\",\r\n  \"countryCode\": \"+91\",\r\n  \"password\": \"123password\",\r\n  \"patientPhoto\": \"string\",\r\n  \"psychiatristId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/patients/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/patients/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"shubham\",\r\n  \"address\": \"123 ss\",\r\n  \"email\": \"shubham@example.com\",\r\n  \"phoneNumber\": \"1234567890\",\r\n  \"countryCode\": \"+91\",\r\n  \"password\": \"123password\",\r\n  \"patientPhoto\": \"string\",\r\n  \"psychiatristId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/patients/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"patients",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "217"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d9-D3qhQ4apTYBZnlcq/ZEzXJHRIJU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 17 Jan 2024 08:39:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": \"true\",\n    \"body\": {\n        \"id\": 101,\n        \"name\": \"shubham\",\n        \"address\": \"123 ss\",\n        \"email\": \"shubham@example.com\",\n        \"phoneNumber\": \"1234567890\",\n        \"countryCode\": \"+91\",\n        \"password\": \"123password\",\n        \"patientPhoto\": \"string\",\n        \"psychiatristId\": 1\n    }\n}"
+				}
+			]
+		}
+	]
+}

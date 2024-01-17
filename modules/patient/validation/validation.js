@@ -5,6 +5,7 @@ const patientSchema = Joi.object({
   address: Joi.string().required(),
   email: Joi.string().email().required(),
   phoneNumber: Joi.string().optional(),
+  countryCode: Joi.string().optional(),
   password: Joi.string().required(),
   patientPhoto: Joi.string().optional(),
   psychiatristId: Joi.number().required(), 

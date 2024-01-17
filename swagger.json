@@ -58,6 +58,11 @@
                     "description": "Phone number of the patient",
                     "example": "1234567890"
                   },
+                  "countryCode": {
+                    "type": "string",
+                    "description": "Phone number of the patient",
+                    "example": "+91"
+                  },
                   "password": {
                     "type": "string",
                     "description": "Password for the patient",

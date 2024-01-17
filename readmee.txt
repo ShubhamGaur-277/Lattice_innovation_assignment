@@ -1,3 +1,10 @@
+postman collection link: https://www.postman.com/galactic-firefly-394038/workspace/lattice-innovation
+
+swagger: http://localhost:3000/api-docs/
+
+
+
+
 # Lattice Innovation
 
 Lattice Innovation is a Node.js application that provides API endpoints for patient registration and hospital details.
